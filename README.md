@@ -1,9 +1,9 @@
 # WELCOME TO LUNCH BUDDIES!!!
 ### _An application that lets you find and match with like-minded students on campus to study, have a meal with, and more!_
 ---
-# Table of Contents
+# 📖 Table of Contents
 1. [Introduction](#introduction)
-2. [Prerequisites] (#prereq)
+2. [Prerequisites](#prerequisites)
 3. [Install](#install)
 4. [Usage](#usage)
 6. [Contributing](#contributing)
@@ -12,12 +12,12 @@
 ---
 
 
-## Introduction 
+## 💡 Introduction
 - Lunch Buddies is a mobile application that helps students on campus connect with like-minded peers to study, share meals, and hang out. The app uses React Native for the front end, Golang for the API, and MySQL for database management.
 
 ---
 
-## Prereq
+## ✅ Prerequisites
 - Before installing Lunch Buddies, ensure you have the following installed:
 1. [Node.js](https://nodejs.org/en/)
 2. [Golang](https://go.dev/dl/)
@@ -25,21 +25,60 @@
 
 ---
 
-## Install
+## 🛠️ Install
 
-- To start, clone the repository: `git clone https://github.com/ufosc/Lunch_Buddies.git`
-- Navigate to the project directory `cd Lunch_Buddies`
-- If you haven't already, install Node.js (version 16.18.0) through this link: [Download Node.js](https://nodejs.org/en/)
-    - To check if you have successfully installed Node.js, you should see the current version of Node.js installed on your computer if you type this into the terminal: 
-    `node --version` or `npm --version`
-- You will also need to install Golang, which is what we are using for the API. You can do through this link: [Download Golang](https://go.dev/dl/)
-- The back-end uses a MySQL database, so you will need to install [MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html) on your local machine and create a user. The instructions in the Usage section will explain what you need to do with your MySQL login. 
-- After installing MySQL, enter your database and coppy the full code from `api/database.sql` and paste it in. This will ensure that your MySQL installation contains the same database and table schema as everyone else. 
-- Once this is finished, start VS Code and open the "Lunch_Buddies" file. Open the terminal within VS Code and `cd Lunch_Buddies`. 
-- After this, enter the client directory with the command `cd client` and type `npm install` to download the required packages for the front-end.
-    - If you havent already dowloaded Expo CLI, type this into the terminal: `npm i expo-cli`
-- Then, enter the api directory with the command `cd ../api` and run the command `go get` to download the go packages that are needed.`
-    
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ufosc/Lunch_Buddies.git
+cd Lunch_Buddies
+```
+
+### 2. Install Node.js
+- [Download Node.js (v16.18.0)](https://nodejs.org/en/)
+- Verify installation:
+
+```bash
+node --version
+npm --version
+```
+
+### 3. Install Golang
+
+- [Download Golang](https://go.dev/dl/)
+- Verify installation:
+
+```bash
+go version
+```
+
+### 4. Set Up MySQL
+
+- [Download MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+- Create a new MySQL user.
+- Run the following SQL commands in your MySQL terminal:
+
+```sql
+-- Paste contents from api/database.sql here
+```
+
+### 5. Install Dependencies
+
+- **For Front-End:**
+
+```bash
+cd client
+npm install
+npm i expo-cli
+```
+
+- **For Back-End:**
+
+```bash
+cd ../api
+go get
+```
+
 ---
 ## Usage
 - Before running the application, copy the `.env.example` file into a file called `.env` and fill in the corresponding credentials.
@@ -54,7 +93,7 @@
     - For Android: use the Expo Go app to scan the QR code
     
 ---    
-## Debugging
+## 🐛 Debugging
 - Expo provides tools to debug the app
 - Error messages are displayed on your phone, any speccific errors can be searched online or discussed with tech leads
 - Shaking the device will open the developer menu, which allows you to refresh the app
@@ -66,13 +105,27 @@
     - Programming Languages: JavaScript, Go
     - UI software framework: React Native
     
-#### Front-End
-- The React Native documentation has the most useful information for beginners
-- Some components (ex. sliders) can lead to crashes on Android. It's strongly encouraged to test on both operating systems, if possible
-- A Figma file is available here (https://www.figma.com/file/XakFXYjXOjFdD0Gljp51Rj/draft-(Copy)?node-id=0%3A1) 
-    - These screens are a helpful guide, but won't neccesarily reflect the final product.
+#### Tech Used
 
-#### Tips:
+- **Frontend:** React Native
+- **Backend:** Golang
+- **Database:** MySQL
+
+### How to Contribute
+
+1. **Fork the repo** and create a new branch:
+```bash
+git checkout -b feature/your-feature-name
+```
+
+2. **Make changes** and commit:
+```bash
+git commit -m "Add your feature"
+```
+
+3. **Push to GitHub** and open a pull request. 
+
+## Resources:
 - You can use these links to get familiar with programming languages/frameworks/libraries we will be using:
     - [React Native Getting Started](https://reactnative.dev/docs/environment-setup)
     - [React Native App Tutorial](https://www.youtube.com/watch?v=0-S5a0eXPoc)
