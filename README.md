@@ -2,14 +2,29 @@
 ### _An application that lets you find and match with like-minded students on campus to study, have a meal with, and more!_
 ---
 # Table of Contents
-1. [Install](#install)
-2. [Usage](#usage)
-3. [Debugging](#debugging)
-4. [Contributing](#contributing)
-    - [Front End](#front-end)
-    - [Tips](#tips)
+1. [Introduction](#introduction)
+2. [Prerequisites] (#prereq)
+3. [Install](#install)
+4. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [Resources](#resources)
 
 ---
+
+
+## Introduction 
+- Lunch Buddies is a mobile application that helps students on campus connect with like-minded peers to study, share meals, and hang out. The app uses React Native for the front end, Golang for the API, and MySQL for database management.
+
+---
+
+## Prereq
+- Before installing Lunch Buddies, ensure you have the following installed:
+1. [Node.js](https://nodejs.org/en/)
+2. [Golang](https://go.dev/dl/)
+3. [MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+
+---
+
 ## Install
 
 - To start, clone the repository: `git clone https://github.com/ufosc/Lunch_Buddies.git`
